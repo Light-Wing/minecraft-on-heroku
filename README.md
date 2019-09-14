@@ -53,7 +53,7 @@ done
 
 And your done!
 
-Go [here](https://dashboard.ngrok.com/status/) to check your server ip.
+Go [here](https://dashboard.ngrok.com/status) to check your server ip.
 
 ## Files sync
 
@@ -77,12 +77,12 @@ The buildpack will sync your world to the bucket every 60 seconds, but this is c
 
 ## Customizing Minecraft
 
-You can choose the Minecraft version by setting the MINECRAFT_VERSION like so:
+You can change the version of Minecraft by updating the PAPER setting. You'll need to set it to the full url from the [PaperMC downloads page](https://papermc.io/downloads)
 
-By default version is `1.8.8-R0.1-SNAPSHOT-latest`, files name are list at [GetBukkit](https://getbukkit.org/spigot) offical site.
+By default version is `https://papermc.io/api/v1/paper/1.13.2/554/download`. To change to 1.14 for example type the following on the command line:
 
 ```
-heroku config:set MINECRAFT_VERSION="1.8.8-R0.1-SNAPSHOT-latest"
+heroku config:set PAPER="https://papermc.io/api/v1/paper/1.14.4/187/download"
 ```
 
 You can also configure the server properties by creating a server.properties file in your project and adding it to Git. This is how you would set things like Creative mode and Hardcore difficulty. The various options available are described on the Minecraft Wiki.
