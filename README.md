@@ -1,6 +1,6 @@
-# Spigot on Heroku
+# Minecraft on Heroku (free)
 
-## Run your spigot minecraft server on the cloud with Heroku.
+## Run your PaperMC minecraft server on the cloud with Heroku.
 
 This is a Heroku [buildpack](https://devcenter.heroku.com/articles/buildpacks), in order to install it you need to install the Heroku [toolbelt](https://toolbelt.heroku.com).
 
@@ -29,11 +29,11 @@ Next, simply copy the following lines to your Command Promt (cmd)
 ```
 heroku create
 heroku buildpacks:add heroku/jvm
-heroku buildpacks:add https://github.com/kimbang012/Spigot-on-heroku
+heroku buildpacks:add https://github.com/jcleary/minecraft-on-heroku
 heroku ps:exec
 git commit -m "Heroku Exec" --allow-empty
-done
 ```
+Done!
 
 Then, manually add these command with your Ngrok auth token, Dropbox app config file link (read below)
 
