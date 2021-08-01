@@ -9,7 +9,7 @@ pid=/var/run/ddclient.pid                                    # Record PID in fil
 use=web, web=checkip.dynu.com/, web-skip='IP Address'        # Get ip from server.
 server=api.dynu.com                                          # IP update server.
 protocol=tcp                        
-login=NguynCaoKimBngJohny                                    # Your username.
-password=kimbang012                                          # Password or MD5/SHA256 of password.
-mineshift.kozow.com                                          # List one or more hostnames one on each line.
+login=lightwing770                                    # Your username.
+password=mman770                                          # Password or MD5/SHA256 of password.
+light.kozow.com                                          # List one or more hostnames one on each line.
 #MYDOMAIN.COM
