@@ -97,7 +97,7 @@ unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 echo "done"
 
 minecraft_version=${MINECRAFT_VERSION:-"1.8.8-R0.1-SNAPSHOT-latest"}
-minecraft_url=${PAPER:-"https://papermc.io/api/v1/paper/1.13.2/554/download"}
+minecraft_url=${PAPER:-"https://papermc.io/api/v2/projects/paper/versions/1.17.1/builds/143/downloads/paper-1.17.1-143.jar"}
 
 echo -n "-----> Installing PaperClipMC ${minecraft_version}... "
 curl -o spigot.jar -s -L $minecraft_url
@@ -130,7 +130,7 @@ echo ""
 echo ""
 echo "!!----- WARNING -----!!"
 echo "Insert heroku ps:scale worker=1"
-echo "in dorder to run the server"
+echo "in order to run the server"
 echo "---------<o/-----------"
 echo ""
 echo ""
